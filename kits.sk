@@ -1,0 +1,175 @@
+function kitEquip(p: player):
+	set {_u} to {_p}'s uuid
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Helmets 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::ah::%{_p}%} to random integer between 1 and 6
+	if {kit::ah::%{_p}%} = 1:
+		set slot 39 of {_p} to iron helmet of protection 1
+	if {kit::ah::%{_p}%} = 2:
+		set slot 39 of {_p} to diamond helmet of protection 1
+	if {kit::ah::%{_p}%} = 3:
+		set slot 39 of {_p} to netherite helmet of protection 1
+	if {kit::ah::%{_p}%} = 4:
+		set slot 39 of {_p} to chainmail helmet of protection 1
+	if {kit::ah::%{_p}%} = 5:
+		set slot 39 of {_p} to leather helmet of protection 2
+	if {kit::ah::%{_p}%} = 6:
+		set slot 39 of {_p} to netherite helmet of protection 1
+	
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Chestplates 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::ac::%{_p}%} to random integer between 1 and 6
+	if {kit::ac::%{_p}%} = 1:
+		set slot 38 of {_p} to iron chestplate of protection 1
+	if {kit::ac::%{_p}%} = 2:
+		set slot 38 of {_p} to diamond chestplate of protection 1
+	if {kit::ac::%{_p}%} = 3:
+		set slot 38 of {_p} to netherite chestplate of protection 1
+	if {kit::ac::%{_p}%} = 4:
+		set slot 38 of {_p} to chainmail chestplate of protection 1
+	if {kit::ac::%{_p}%} = 5:
+		set slot 38 of {_p} to leather chestplate of protection 2
+	if {kit::ac::%{_p}%} = 6:
+		set slot 38 of {_p} to netherite chestplate of protection 1
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Leggings 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::al::%{_p}%} to random integer between 1 and 6
+	if {kit::al::%{_p}%} = 1:
+		set slot 37 of {_p} to iron leggings of protection 1
+	if {kit::al::%{_p}%} = 2:
+		set slot 37 of {_p} to diamond leggings of protection 1
+	if {kit::al::%{_p}%} = 3:
+		set slot 37 of {_p} to netherite leggings of protection 1
+	if {kit::al::%{_p}%} = 4:
+		set slot 37 of {_p} to chainmail leggings of protection 1
+	if {kit::al::%{_p}%} = 5:
+		set slot 37 of {_p} to leather leggings of protection 2
+	if {kit::al::%{_p}%} = 6:
+		set slot 37 of {_p} to netherite leggings of protection 1
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Boots 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::ab::%{_p}%} to random integer between 1 and 6
+	if {kit::ab::%{_p}%} = 1:
+		set slot 36 of {_p} to iron boots of protection 1
+	if {kit::ab::%{_p}%} = 2:
+		set slot 36 of {_p} to diamond boots of protection 1
+	if {kit::ab::%{_p}%} = 3:
+		set slot 36 of {_p} to netherite boots of protection 1
+	if {kit::ab::%{_p}%} = 4:
+		set slot 36 of {_p} to chainmail boots of protection 1
+	if {kit::ab::%{_p}%} = 5:
+		set slot 36 of {_p} to leather boots of protection 2
+	if {kit::ab::%{_p}%} = 6:
+		set slot 36 of {_p} to netherite boots of protection
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Off Hand 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::oh::%{_p}%} to random integer between 1 and 5
+	if {kit::oh::%{_p}%} = 1:
+		set slot 40 of {_p} to totem of undying or golden apple
+	else:
+		set slot 40 of {_p} to shield
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Hotbar 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::h1::%{_p}%} to random integer between 1 and 3
+	if {kit::h1::%{_p}%} = 1:
+		set slot 0 of {_p} to iron sword of sharpness 2
+	if {kit::h1::%{_p}%} = 2:
+		set slot 0 of {_p} to diamond sword of sharpness 1
+	if {kit::h1::%{_p}%} = 3:
+		set slot 0 of {_p} to netherite sword of sharpness 1
+	
+	set {kit::h2::%{_p}%} to random integer between 1 and 5
+	if {kit::h2::%{_p}%} = 1:
+		set slot 1 of {_p} to crossbow of piercing 2
+	if {kit::h2::%{_p}%} = 2:
+		set slot 1 of {_p} to bow of power 1
+	if {kit::h2::%{_p}%} = 3:
+		set slot 1 of {_p} to bow of power 3
+	if {kit::h2::%{_p}%} = 4:
+		set slot 1 of {_p} to crossbow of quick charge 2
+	if {kit::h2::%{_p}%} = 5:
+		set slot 1 of {_p} to crossbow of quick charge 4
+
+	set {kit::h3::%{_p}%} to random integer between 1 and 5
+	if {kit::h3::%{_p}%} = 1:
+		set slot 2 of {_p} to diamond pickaxe of efficiency 1
+	if {kit::h3::%{_p}%} = 2:
+		set slot 2 of {_p} to iron pickaxe of efficiency 2
+	if {kit::h3::%{_p}%} = 3:
+		set slot 2 of {_p} to netherite pickaxe of efficiency 1
+	if {kit::h3::%{_p}%} = 4:
+		set slot 2 of {_p} to diamond axe of sharpness 1
+	if {kit::h3::%{_p}%} = 5:
+		set slot 2 of {_p} to iron axe of sharpness 1
+
+	set {kit::h4::%{_p}%} to random integer between 1 and 5
+	if {kit::h4::%{_p}%} = 1:
+		set slot 3 of {_p} to 32 bread
+	if {kit::h4::%{_p}%} = 2:
+		set slot 3 of {_p} to 16 bread
+	if {kit::h4::%{_p}%} = 3:
+		set slot 3 of {_p} to 16 golden carrots
+	if {kit::h4::%{_p}%} = 4:
+		set slot 3 of {_p} to 16 steak
+	if {kit::h4::%{_p}%} = 5:
+		set slot 3 of {_p} to 32 steak
+
+	set {kit::h5::%{_p}%} to random integer between 1 and 4
+	if {kit::h5::%{_p}%} = 1:
+		set slot 4 and 5 of {_p} to 64 cobblestone
+	if {kit::h5::%{_p}%} = 2:
+		set slot 4 and 5 of {_p} to 64 oak planks
+	if {kit::h5::%{_p}%} = 3:
+		set slot 4 and 5 and 6 of {_p} to 64 cobblestone
+	if {kit::h5::%{_p}%} = 4:
+		set slot 4 and 5 and 6 of {_p} to 64 oak planks
+
+
+	#   🢃🢃🢃🢃🢃🢃🢃🢃 Inventory 🢃🢃🢃🢃🢃🢃🢃🢃
+
+	set {kit::i1::%{_p}%} to random integer between 1 and 5
+	if {kit::i1::%{_p}%} = 1:
+		set slot 9 of {_p} to 1 firework rocket named "&c&lLaunch" with lore "" and "if you use this, you will fucking die"
+	if {kit::i1::%{_p}%} = 2:
+		set slot 9 of {_p} to 6 tnt named "&c&lTNT" with lore "&cAuto Ignites"
+
+
+	set {kit::i2::%{_p}%} to random integer between 1 and 4
+	if {kit::i2::%{_p}%} = 1:
+		set slot 10 of {_p} to 64 arrow
+	if {kit::i2::%{_p}%} = 2:
+		set slot 10 of {_p} to 16 arrow
+	if {kit::i2::%{_p}%} = 3:
+		set slot 10 of {_p} to 32 arrow
+	if {kit::i2::%{_p}%} = 4:
+		set slot 10 of {_p} to 8 arrow
+
+	set {kit::i3::%{_p}%} to random integer between 1 and 4
+	if {kit::i3::%{_p}%} = 1:
+		set slot 11 and 12 of {_p} to lava bucket
+	if {kit::i3::%{_p}%} = 2:
+		set slot 11 and 12 of {_p} to water bucket
+	if {kit::i3::%{_p}%} = 3:
+		set slot 11 of {_p} to lava bucket
+		set slot 12 of {_p} to water bucket
+	if {kit::i3::%{_p}%} = 4:
+		set slot 11 and 12 and 13 of {_p} to lava bucket
+
+
+
+
+
+on death of player:
+	wait 1 ticks
+	kitEquip(victim)
+
+on first join:
+	wait 1 tick
+	kitEquip(player)
+	
+
