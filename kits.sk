@@ -1,5 +1,4 @@
 function kitEquip(p: player):
-	set {_u} to {_p}'s uuid
 
 	#   🢃🢃🢃🢃🢃🢃🢃🢃 Helmets 🢃🢃🢃🢃🢃🢃🢃🢃
 
